@@ -2,11 +2,11 @@
 
 This repository provides a compact and functional implementation of the local explanation method for t-SNE embeddings, as proposed by **Bibal et al. (2020)**. 
 
-The project demonstrates how to make t-SNE—a non-parametric and non-linear dimensionality reduction technique—locally interpretable through **synthetic sampling** and **optimal rotation (BIR)**.
+The project demonstrates how to make t-SNE, a non-parametric and non-linear dimensionality reduction technique, locally interpretable through **synthetic sampling** and **optimal rotation (BIR)**.
 
 ## Overview
 
-The core objective is to explain the "local logic" behind a specific point's position in a t-SNE plot (e.g., why Spain is located in a specific cluster). Since t-SNE axes are arbitrary and rotation-invariant, we use the **Best Interpretable Rotation (BIR)** algorithm to find an orientation that aligns the local neighborhood with original high-dimensional features.
+The core objective is to explain the "local logic" behind a specific point's position in a t-SNE plot. Since t-SNE axes are arbitrary and rotation-invariant, we use the **Best Interpretable Rotation (BIR)** algorithm to find an orientation that aligns the local neighborhood with original high-dimensional features.
 
 ### Key Technical Features
 * **Local SMOTE Sampling**: Generates synthetic points on the high-dimensional data manifold to probe the local structure.
@@ -50,13 +50,3 @@ If you use this work, please cite the original paper:
 **APA:**
 > Bibal, A., Lognoul, M., De Bruyne, C., de Terwangne, C., & Frénay, B. (2020). Legal requirements on explainability in AI. *Proceedings of the 28th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning (ESANN)*, 547-552.
 
-**BibTeX:**
-```bibtex
-@inproceedings{bibal2020legal,
-  title={Legal requirements on explainability in AI},
-  author={Bibal, Adrien and Lognoul, Michael and De Bruyne, Alexandre and de Terwangne, C{'e}cile and Fr{'e}nay, Beno{\^\i}t},
-  booktitle={28th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning (ESANN)},
-  pages={547--552},
-  year={2020}
-}
-```
