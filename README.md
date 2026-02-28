@@ -26,7 +26,7 @@ The main script `report_code.py` performs the full pipeline: data loading, t-SNE
 python report_code.py
 ```
 
-## 📊 Methodology
+## Methodology
 
 This implementation illustrates **Section 4.3 (BIR)** of the paper:
 1.  **Selection**: Pick a target instance $x$ (e.g., Spain).
